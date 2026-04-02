@@ -150,6 +150,15 @@ function Menu.ApplyTheme(themeName)
         Menu.Colors.SelectedBg = { r = 249, g = 214, b = 46 }
         Menu.Banner.imageUrl = "https://i.imgur.com/wlfBxdH.png"
         Menu.CurrentTheme = "Yellow"
+    elseif themeLower == "brown" then
+        Menu.Colors.HeaderPink = { r = 142, g = 99, b = 69 }
+        Menu.Colors.SelectedBg = { r = 142, g = 99, b = 69 }
+        Menu.Banner.imageUrl = "https://i.imgur.com/SjegXE3.png"
+    elseif themeLower == "green" then
+        Menu.Colors.HeaderPink = { r = 204, g = 255, b = 0 }
+        Menu.Colors.SelectedBg = { r = 204, g = 255, b = 0 }
+        Menu.Banner.imageUrl = "https://i.imgur.com/SjegXE3.png"
+        Menu.CurrentTheme = "Green"
     elseif themeLower == "gray" then
         Menu.Colors.HeaderPink = { r = 128, g = 128, b = 128 }
         Menu.Colors.SelectedBg = { r = 128, g = 128, b = 128 }
@@ -159,7 +168,7 @@ function Menu.ApplyTheme(themeName)
         Menu.Colors.HeaderPink = { r = 255, g = 20, b = 147 }
         Menu.Colors.SelectedBg = { r = 255, g = 20, b = 147 }
         Menu.Banner.imageUrl = "https://i.imgur.com/NSuzEfx.png"
-        Menu.CurrentTheme = "pink"
+        Menu.CurrentTheme = "Pink"
     else
         Menu.Colors.HeaderPink = { r = 249, g = 214, b = 46 }
         Menu.Colors.SelectedBg = { r = 249, g = 214, b = 46 }
@@ -1524,7 +1533,7 @@ function Menu.DrawFooter()
     local scaledFooterSize = footerSize * scale
     local footerTextY = footerY + (footerHeight / 2) - (scaledFooterSize / 2) + (1 * scale)
 
-    local footerText = " https://discord.gg/zP8MaFP9uM "
+    local footerText = " By Ianis 😘 "
     local currentX = x + footerPadding
 
     local textWidth = 0
