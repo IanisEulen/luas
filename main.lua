@@ -129,11 +129,11 @@ Menu.Colors = {
     FooterBlack = { r = 0, g = 0, b = 0 }
 }
 
-Menu.CurrentTheme = "Purple"
+Menu.CurrentTheme = "Yellow"
 
 function Menu.ApplyTheme(themeName)
     if not themeName or type(themeName) ~= "string" then
-        themeName = "Purple"
+        themeName = "Yellow"
     end
     
 
@@ -143,28 +143,28 @@ function Menu.ApplyTheme(themeName)
     if themeLower == "red" then
         Menu.Colors.HeaderPink = { r = 255, g = 0, b = 0 }
         Menu.Colors.SelectedBg = { r = 255, g = 0, b = 0 }
-        Menu.Banner.imageUrl = "https://i.imgur.com/cOFPinI.gif"
+        Menu.Banner.imageUrl = "https://i.imgur.com/sdqneUQ.png"
         Menu.CurrentTheme = "Red"
-    elseif themeLower == "purple" then
-        Menu.Colors.HeaderPink = { r = 148, g = 0, b = 211 }
-        Menu.Colors.SelectedBg = { r = 148, g = 0, b = 211 }
-        Menu.Banner.imageUrl = "https://i.imgur.com/8wGWjBh.png"
-        Menu.CurrentTheme = "Purple"
+    elseif themeLower == "yellow" then
+        Menu.Colors.HeaderPink = { r = 249, g = 214, b = 46 }
+        Menu.Colors.SelectedBg = { r = 249, g = 214, b = 46 }
+        Menu.Banner.imageUrl = "https://i.imgur.com/wlfBxdH.png"
+        Menu.CurrentTheme = "Yellow"
     elseif themeLower == "gray" then
         Menu.Colors.HeaderPink = { r = 128, g = 128, b = 128 }
         Menu.Colors.SelectedBg = { r = 128, g = 128, b = 128 }
-        Menu.Banner.imageUrl = "https://i.imgur.com/iZnBhaR.jpeg"
+        Menu.Banner.imageUrl = "https://i.imgur.com/ZeJ6YRd.png"
         Menu.CurrentTheme = "Gray"
     elseif themeLower == "pink" then
         Menu.Colors.HeaderPink = { r = 255, g = 20, b = 147 }
         Menu.Colors.SelectedBg = { r = 255, g = 20, b = 147 }
-        Menu.Banner.imageUrl = "https://i.imgur.com/BbABj2n.png"
+        Menu.Banner.imageUrl = "https://i.imgur.com/NSuzEfx.png"
         Menu.CurrentTheme = "pink"
     else
-        Menu.Colors.HeaderPink = { r = 148, g = 0, b = 211 }
-        Menu.Colors.SelectedBg = { r = 148, g = 0, b = 211 }
-        Menu.Banner.imageUrl = "https://i.imgur.com/8wGWjBh.png"
-        Menu.CurrentTheme = "Purple"
+        Menu.Colors.HeaderPink = { r = 249, g = 214, b = 46 }
+        Menu.Colors.SelectedBg = { r = 249, g = 214, b = 46 }
+        Menu.Banner.imageUrl = "https://i.imgur.com/wlfBxdH.png"
+        Menu.CurrentTheme = "Yellow"
     end
 
     if Menu.Banner.enabled and Menu.Banner.imageUrl then
